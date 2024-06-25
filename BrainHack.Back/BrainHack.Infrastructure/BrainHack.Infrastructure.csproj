@@ -12,4 +12,8 @@
     <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BrainHack.Core\BrainHack.Core.csproj" />
+  </ItemGroup>
+
 </Project>

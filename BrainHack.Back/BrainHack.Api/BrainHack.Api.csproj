@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrainHack.Application\BrainHack.Application.csproj" />
     <ProjectReference Include="..\BrainHack.Infrastructure\BrainHack.Infrastructure.csproj" />
   </ItemGroup>
 

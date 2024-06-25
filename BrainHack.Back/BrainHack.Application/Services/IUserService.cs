@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BrainHack.Application.Services
 {
-    internal interface IUserService
+    public interface IUserService
     {
     }
 }

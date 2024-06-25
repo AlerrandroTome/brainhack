@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BrainHack.Core.Services
+namespace BrainHack.Core.DTOs.Card
 {
-    internal interface IMongoService
+    internal class DeckDto
     {
     }
 }

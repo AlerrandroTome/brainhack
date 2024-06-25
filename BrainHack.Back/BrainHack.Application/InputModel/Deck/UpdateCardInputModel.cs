@@ -1,24 +1,14 @@
-﻿namespace BrainHack.Core.Entities
+﻿namespace BrainHack.Application.InputModel.Deck
 {
-    public class Card
+    public class UpdateCardInputModel
     {
-        public Card(Guid id, string frontText, string backText, DateTime insertionDate, int difficultyLevel, DateTime lastReviewDate, int reviewCount, double easeFactor, int interval)
+        public UpdateCardInputModel(string frontText, string backText)
         {
-            Id = id;
             FrontText = frontText;
             BackText = backText;
-            InsertionDate = DateTime.Now;
-        }        
-        
-        public Card(string frontText, string backText, DateTime insertionDate, int difficultyLevel, DateTime lastReviewDate, int reviewCount, double easeFactor, int interval)
-        {
-            Id = Guid.NewGuid();
-            FrontText = frontText;
-            BackText = backText;
-            InsertionDate = DateTime.Now;
         }
 
-        public Guid Id { get; set; } // Unique identifier for the card
+        public Guid Id { get; set; }
         public string FrontText { get; set; } // Text displayed on the front of the card
         public string BackText { get; set; } // Text displayed on the back of the card
         public DateTime InsertionDate { get; set; } // Date when the card was inserted
